@@ -1,0 +1,8 @@
+[Unit]
+Description=entrypoint install script
+
+[Service]
+ExecStart=/entrypoint.sh
+
+[Install]
+WantedBy=multi-user.target

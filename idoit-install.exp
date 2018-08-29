@@ -1,0 +1,24 @@
+#!/usr/bin/expect -ex -f 
+
+exp_internal 1
+set timeout -1
+
+spawn /idoit-install
+
+expect -ex {Do you really want to continue? [Y]es [n]o:} { send "Y\r" }
+expect -ex {Do you want to configure a proxy server? [y]es [N]o:} { send "n\r" }
+expect -ex {Do you want to configure the operating system? [Y]es [n]o:} { send "Y\r" }
+expect -ex {Do you want to configure the PHP environment? [Y]es [n]o:} { send "Y\r" }
+expect -ex {Do you want to configure the Apache Web server? [Y]es [n]o:} { send "Y\r" }
+expect -ex {Do you want to configure MariaDB? [Y]es [n]o:} { send "Y\r" }
+expect -ex {Please enter a new password for MariaDB's super user 'root' [leave empty for 'idoit']:} { send "\r" }
+expect -ex {You SHOULD give MariaDB ~ 50 per cent of your RAM [leave empty for '1G']:} { send "\r" }
+expect -ex {Do you want to download and install i-doit automatically? [Y]es [n]o:} { send "Y\r" }
+expect -ex {Which variant of i-doit do you like to install? [PRO|open]:} { send "open\r" }
+expect -ex {Please enter the MariaDB hostname [leave empty for 'localhost']:} { send "\r" }
+expect -ex {Please enter the password for the new MariaDB user 'idoit' [leave empty for 'idoit']:} { send "\r" }
+expect -ex {Please enter the password for the i-doit Admin Center [leave empty for 'admin']:} { send "\r" }
+expect -ex {Please enter the name of the first tenant [leave empty for 'CMDB']:} { send "\r" }
+expect -ex {Do you want to configure i-doit cron jobs? [Y]es [n]o:} { send "Y\r" }
+expect -ex {Do you want to backup i-doit automatically? [Y]es [n]o:} { send "n\r" }
+
