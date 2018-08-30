@@ -1,5 +1,8 @@
 # idoit-docker
 
+[![dockerhub](https://img.shields.io/badge/dockerhub-reference-green.svg)](https://hub.docker.com/r/cseeger4epages/idoit-docker/)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/cseeger-epages/idoit-docker/blob/master/LICENSE)
+
 idoit in a docker container
 
 ## a side note
