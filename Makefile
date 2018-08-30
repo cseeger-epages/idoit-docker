@@ -6,8 +6,8 @@ rebuild:
 	docker build --no-cache=true -t cseeger4epages/idoit-docker .
 
 push:
-	docker tag cseeger4epages/idoit-docker cseeger4epages/idoit-docker:$$(date +%Y%m%d) 
-	docker push cseeger4epages/idoit-docker
+	#docker tag cseeger4epages/idoit-docker cseeger4epages/idoit-docker:$$(date +%Y%m%d) 
+	#docker push cseeger4epages/idoit-docker
 	docker tag cseeger4epages/idoit-docker cseeger4epages/idoit-docker:latest
 	docker push cseeger4epages/idoit-docker
 
