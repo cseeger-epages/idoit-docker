@@ -2,7 +2,7 @@
 Description=entrypoint install script
 
 [Service]
-ExecStart=/entrypoint.sh
+ExecStart=/install.sh
 
 [Install]
 WantedBy=multi-user.target
